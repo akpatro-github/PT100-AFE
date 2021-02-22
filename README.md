@@ -20,6 +20,7 @@ Figure 2 and Figure 3 show the schematic of the RTD amplifier for minimum and ma
 	
 Figure 4 below shows the three wire RTD configuration can be used to cancel lead resistance. Note that the resistance in each lead must be equal to cancel the error. Also, the two current sources in the REF200 need to be equal. Notice that the voltage developed on the two top leads of the RTD are equal and opposite polarity so that the amplifiers input is only from the RTD voltage. In this example, the RTD drop is 15.679mV and the leads each have 0.02mV. Notice that the 0.02mV drops cancel. Finally, notice that the voltage on the 3rd lead (0.04mV) creates a small shift in the common mode voltage. In some applications, a larger resistor is intentionally added to shift the common mode voltage. However, the INA826 has a rail to rail common mode range, so it can accept common mode voltages near ground.
 
+![40 C Figure](Block%20Diagram/@-40c.png)
 ### 2.2 Noise Calculation
 ### 2.3 Selecting Gain and Offset Resistor
 
