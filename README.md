@@ -7,10 +7,10 @@ Analog Front-End for the PT100 temperature sensor inside the HIMA temperature ch
 
 ## 1. Design Summary
 The Design requirements are as follows:
-	- Supply voltage: 5V
-	- RTD Temperature range: -40℃ to 151℃
-	- RTD Resistance range: 84.27Ω to 157.69Ω
-	- Output Range: 0.15V to 4.993V
+- Supply voltage: 5V
+- RTD Temperature range: -40℃ to 151℃
+- RTD Resistance range: 84.27Ω to 157.69Ω
+- Output Range: 0.15V to 4.993V
 
 ## 2. Theory of operation
 
