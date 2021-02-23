@@ -35,7 +35,9 @@ Figure 3 below shows the three wire RTD configuration can be used to cancel lead
 
 - Calculate the require Gain (ΔVout/ΔVin)
 
-G =  $\frac{(Voutmax - Voutmin) }{(RRTDmax-RRTDmin).Iref}$ = $\frac{(4.993-0.15) }{(157.69-84.27).100u}$ = 659.63
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;G=\frac{(Voutmax - Voutmin)}{(RRTDmax-RRTDmin).Iref}" title="Gain" />
+
+G = \frac{(Voutmax - Voutmin)}{(RRTDmax-RRTDmin).Iref} = \frac{(4.993-0.15)}{(157.69-84.27).100u} = 659.63
 	
 - Choose standard resistors to assure that the actual gain is equal to or less than the calculated gain. From INA826 data sheet we get the gain equation as:
 	
