@@ -39,7 +39,7 @@ Figure 3 below shows the three wire RTD configuration can be used to cancel lead
 
 - Calculate the require Gain (ΔVout/ΔVin)
 
-G = \frac{(Voutmax - Voutmin)}{(RRTDmax-RRTDmin).Iref} = \frac{(4.993-0.15)}{(157.69-84.27).100u} = 659.63
+<a href="https://www.codecogs.com/eqnedit.php?latex=G&space;=&space;\frac{(Voutmax&space;-&space;Voutmin)}{(Rmax-Rmin).Iref}&space;=&space;\frac{(4.993-0.15)}{(157.69-84.27).100u}&space;=&space;659.63" target="_blank"><img src="https://latex.codecogs.com/gif.latex?G&space;=&space;\frac{(Voutmax&space;-&space;Voutmin)}{(Rmax-Rmin).Iref}&space;=&space;\frac{(4.993-0.15)}{(157.69-84.27).100u}&space;=&space;659.63" title="G = \frac{(Voutmax - Voutmin)}{(Rmax-Rmin).Iref} = \frac{(4.993-0.15)}{(157.69-84.27).100u} = 659.63" /></a>
 	
 - Choose standard resistors to assure that the actual gain is equal to or less than the calculated gain. From INA826 data sheet we get the gain equation as:
 	
@@ -48,7 +48,10 @@ RG = $\frac{G-1 }{49.4K}$ = 75Ω (standard value)
 	
 - Calculate a value of R3 based on the minimum output voltage and the gain
 R3 = 82Ω (standard value)
-	
+
+### 2.4 Output Filter
+- Gain = 
+
 ## 3. PCB Design
 ### 3.1. PCB Layout
 
