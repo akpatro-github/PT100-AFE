@@ -40,6 +40,11 @@ RG = $\frac{G-1 }{49.4K}$ = 75Ω (standard value)
 - Calculate a value of R3 based on the minimum output voltage and the gain
 R3 = 82Ω (standard value)
 	
-3. PCB Design
- 3.1. PCB Layout
+## 3. PCB Design
+3.1. PCB Layout
+
+![PCB Top ](https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Top.png)
+
+![PCB Bottom](https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Bottom.png)
+
 # Analog Discovery 2
