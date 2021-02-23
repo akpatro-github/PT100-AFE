@@ -10,11 +10,11 @@ The Design requirements are as follows:
 - Supply voltage: 5V
 - RTD Temperature range: -40℃ to 151℃
 - RTD Resistance range: 84.27Ω to 157.69Ω
-- Output Range: 0.15V to 4.993V
+- Output Range: 0V to 5V
 
 ## 2. Theory of operation
 
-Figure 2 and Figure 3 show the schematic of the RTD amplifier for minimum and maximum output conditions. Note that this circuit was designed for a -40℃ to 151℃ RTD temperature range. At -40℃ the RTD resistance is 84.27Ω and the voltage across it is 8.427mV (VRTD = (100μA)(84.27Ω), see Figure 2). Notice that R3 develops a voltage drop that opposes the RTD drop. The drop across R3 is used to shift amplifiers input differential voltage to a minimum level. The output is the differential input multiplied by the gain (Vout = 659.67 x 227μV = 0.1497V). At 151℃ the RTD resistance is 157.69Ω and the voltage across it is 15.769mV (VRTD = (100μA)(157.69Ω)). This produces a differential input of 7.569mV and an output voltage of 4.9930V (Vout = 659.67 x 7.569mV = 4.9930V, see Figure 3).
+Figure 1 and Figure 2 show the schematic of the RTD amplifier for minimum and maximum output conditions. Note that this circuit was designed for a -40℃ to 151℃ RTD temperature range. At -40℃ the RTD resistance is 84.27Ω and the voltage across it is 8.427mV (VRTD = (100μA)(84.27Ω), see Figure 1). Notice that Rtrim develops a voltage drop that opposes the RTD drop. The drop across Rtrim is used to shift amplifiers input differential voltage to a minimum level. The output is the differential input multiplied by the gain (Vout = 659.67 x 227μV = 0.1497V). At 151℃ the RTD resistance is 157.69Ω and the voltage across it is 15.769mV (VRTD = (100μA)(157.69Ω)). This produces a differential input of 7.569mV and an output voltage of 4.9930V (Vout = 659.67 x 7.569mV = 4.9930V, see Figure 2).
 
 ![@-40 C Figure](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/-40C.png)
 
@@ -22,10 +22,12 @@ Figure 2 and Figure 3 show the schematic of the RTD amplifier for minimum and ma
 
 ### 2.1. **Lead Resistance cancelation (3 wire RTD)**
 	
-Figure 4 below shows the three wire RTD configuration can be used to cancel lead resistance. Note that the resistance in each lead must be equal to cancel the error. Also, the two current sources in the REF200 need to be equal. Notice that the voltage developed on the two top leads of the RTD are equal and opposite polarity so that the amplifiers input is only from the RTD voltage. In this example, the RTD drop is 15.679mV and the leads each have 0.02mV. Notice that the 0.02mV drops cancel. Finally, notice that the voltage on the 3rd lead (0.04mV) creates a small shift in the common mode voltage. In some applications, a larger resistor is intentionally added to shift the common mode voltage. However, the INA826 has a rail to rail common mode range, so it can accept common mode voltages near ground.
+Figure 3 below shows the three wire RTD configuration can be used to cancel lead resistance. Note that the resistance in each lead must be equal to cancel the error. Also, the two current sources in the REF200 need to be equal. Notice that the voltage developed on the two top leads of the RTD are equal and opposite polarity so that the amplifiers input is only from the RTD voltage. In this example, the RTD drop is 15.679mV and the leads each have 0.02mV. Notice that the 0.02mV drops cancel. Finally, notice that the voltage on the 3rd lead (0.04mV) creates a small shift in the common mode voltage. In some applications, a larger resistor is intentionally added to shift the common mode voltage. However, the INA826 has a rail to rail common mode range, so it can accept common mode voltages near ground.
 
+![schematic Figure](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/schematic.png)
 
 ### 2.2 Noise Calculation
+
 ### 2.3 Selecting Gain and Offset Resistor
 
 - Calculate the require Gain (ΔVout/ΔVin)
@@ -41,7 +43,7 @@ RG = $\frac{G-1 }{49.4K}$ = 75Ω (standard value)
 R3 = 82Ω (standard value)
 	
 ## 3. PCB Design
-3.1. PCB Layout
+###3.1. PCB Layout
 
 ![PCB Top ](https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Top.png)
 
