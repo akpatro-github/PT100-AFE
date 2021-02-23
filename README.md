@@ -38,7 +38,10 @@ Fig 2:RTD Amplifier wit maximum output condition
 	
 Figure 3 below shows the three wire RTD configuration can be used to cancel lead resistance. Note that the resistance in each lead must be equal to cancel the error. Also, the two current sources in the REF200 need to be equal. Notice that the voltage developed on the two top leads of the RTD are equal and opposite polarity so that the amplifiers input is only from the RTD voltage. In this example, the RTD drop is 15.679mV and the leads each have 0.02mV. Notice that the 0.02mV drops cancel. Finally, notice that the voltage on the 3rd lead (0.04mV) creates a small shift in the common mode voltage. In some applications, a larger resistor is intentionally added to shift the common mode voltage. However, the INA826 has a rail to rail common mode range, so it can accept common mode voltages near ground.
 
-![schematic](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/schematic.png)
+|<img title="Schematic" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/schematic.png">|
+|:--:|
+|*Figure 1: Schematic of AFE*|
+
 
 ### 2.2 Noise Calculation
 #### Resistror Noise
@@ -134,8 +137,14 @@ R3 = 82Ω (standard value)
 ## 3. PCB Design
 ### 3.1. PCB Layout
 
-![PCB Top ](https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Top.png)
+|<img title="PCB Top" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Top.png">|
+|:--:|
+|*Figure 1: PCB Top*|
 
-![PCB Bottom](https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Bottom.png)
+
+|<img title="PCB Bottom" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Bottom.png">|
+|:--:|
+|*Figure 1: PCB Bottom*|
+
 
 # Analog Discovery 2
