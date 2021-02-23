@@ -31,11 +31,82 @@ Fig 2:RTD Amplifier wit maximum output condition
 	
 Figure 3 below shows the three wire RTD configuration can be used to cancel lead resistance. Note that the resistance in each lead must be equal to cancel the error. Also, the two current sources in the REF200 need to be equal. Notice that the voltage developed on the two top leads of the RTD are equal and opposite polarity so that the amplifiers input is only from the RTD voltage. In this example, the RTD drop is 15.679mV and the leads each have 0.02mV. Notice that the 0.02mV drops cancel. Finally, notice that the voltage on the 3rd lead (0.04mV) creates a small shift in the common mode voltage. In some applications, a larger resistor is intentionally added to shift the common mode voltage. However, the INA826 has a rail to rail common mode range, so it can accept common mode voltages near ground.
 
-![schematic Figure](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/schematic.png)
+![schematic](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/schematic.png)
 
 ### 2.2 Noise Calculation
+#### Resistror Noise
+For Analysis purpose, Rwire = 20Ω,
+		     Temperature = 25C(318k), 
+		     B.W. = 30KHz
 
-### 2.3 Selecting Gain and Offset Resistor
+Thermal noise of resistor = <a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_n_r^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;R" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_n_r^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;R" title="\bar{V}_n_r^2 = 4 * K * T * R" /></a>
+
+
+i)
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nr1}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{wire}&space;&plus;&space;R_{trim})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nr1}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{wire}&space;&plus;&space;R_{trim})" title="\small \bar{V}_{nr1}^2 = 4 * K * T * (R_{wire} + R_{trim})" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nr1}^2&space;=&space;4&space;*&space;1.38&space;*&space;10^{-23}&space;*&space;318&space;*&space;(82&plus;20)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nr1}^2&space;=&space;4&space;*&space;1.38&space;*&space;10^{-23}&space;*&space;318&space;*&space;(82&plus;20)" title="\bar{V}_{nr1}^2 = 4 * 1.38 * 10^{-23} * 318 * (82+20)" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nr1}^2&space;=&space;1.79&space;*&space;10^{-18}&space;\frac{V^{2}}{HZ}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nr1}^2&space;=&space;1.79&space;*&space;10^{-18}&space;\frac{V^{2}}{HZ}" title="\bar{V}_{nr1}^2 = 1.79 * 10^{-18} \frac{V^{2}}{HZ}" /></a>
+
+ii)
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nr2}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{PT100}&space;&plus;&space;R_{wire})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nr2}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{PT100}&space;&plus;&space;R_{wire})" title="\small \bar{V}_{nr2}^2 = 4 * K * T * (R_{PT100} + R_{wire})" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nr2}^2&space;=&space;4&space;*&space;1.38&space;*&space;10^{-23}&space;*&space;433&space;*&space;(161.04&plus;20)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nr2}^2&space;=&space;4&space;*&space;1.38&space;*&space;10^{-23}&space;*&space;433&space;*&space;(161.04&plus;20)" title="\bar{V}_{nr2}^2 = 4 * 1.38 * 10^{-23} * 433 * (161.04+20)" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nr2}^2&space;=&space;4.33&space;*&space;10^{-18}\frac{V^{2}}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nr2}^2&space;=&space;4.33&space;*&space;10^{-18}\frac{V^{2}}{{Hz}}" title="\bar{V}_{nr2}^2 = 4.33 * 10^{-18}\frac{V^{2}}{{Hz}}" /></a>
+
+iii)
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nr3}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{wire})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nr3}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{wire})" title="\small \bar{V}_{nr3}^2 = 4 * K * T * (R_{wire})" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nr2}^2&space;=&space;4&space;*&space;1.38&space;*&space;10^{-23}&space;*&space;318&space;*&space;20" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nr3}^2&space;=&space;4&space;*&space;1.38&space;*&space;10^{-23}&space;*&space;318&space;*&space;20" title="\bar{V}_{nr3}^2 = 4 * 1.38 * 10^{-23} * 318 * 20" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nr2}^2&space;=&space;3.51&space;*&space;10^{-19}\frac{V^{2}}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nr3}^2&space;=&space;3.51&space;*&space;10^{-19}\frac{V^{2}}{{Hz}}" title="\bar{V}_{nr3}^2 = 3.51 * 10^{-19}\frac{V^{2}}{{Hz}}" /></a>
+
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;Total&space;Resistance&space;Noise&space;=&space;V_{nr}&space;=&space;\sqrt{(1.34)^{2}&space;&plus;&space;(2.1)^2}&space;&plus;&space;0.6&space;=&space;3.1\frac{nV}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;Total&space;Resistance&space;Noise&space;=&space;V_{nr}&space;=&space;\sqrt{(1.34)^{2}&space;&plus;&space;(2.1)^2}&space;&plus;&space;0.6&space;=&space;3.1\frac{nV}{\sqrt{Hz}}" title="\small Total Resistance Noise = V_{nr} = \sqrt{(1.34)^{2} + (2.1)^2} + 0.6 = 3.1\frac{nV}{\sqrt{Hz}}" /></a>
+
+#### Current Noise
+
+From the datasheet of INA826 current noise = <a href="https://www.codecogs.com/eqnedit.php?latex=10fA/\sqrt{Hz}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?10fA/\sqrt{Hz}" title="10fA/\sqrt{Hz}" /></a>
+
+i)
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nc1}^2&space;=&space;0.00001&space;*&space;\frac{nA}{\sqrt{Hz}}&space;*&space;(20&plus;161.04)ohm" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nc1}^2&space;=&space;0.00001&space;&space;\frac{nA}{\sqrt{Hz}}&space;*&space;(20&plus;161.04)ohm" title="\small \bar{V}_{nc1}^2 = 0.00001 * \frac{nA}{\sqrt{Hz}} * (20+161.04)ohm" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nc1}^2&space;=&space;0.0018\frac{nV}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nc1}&space;=&space;0.0018\frac{nV}{\sqrt{Hz}}" title="\bar{V}_{nc1}^2 = 0.0018\frac{nV}{\sqrt{Hz}}" /></a>
+
+ii)
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nc2}^2&space;=&space;0.00001&space;*&space;\frac{nA}{\sqrt{Hz}}&space;*&space;(20&plus;82)ohm" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nc2}^2&space;=&space;0.00001&space;&space;\frac{nA}{\sqrt{Hz}}&space;*&space;(20&plus;82)ohm" title="\small \bar{V}_{nc2}^2 = 0.00001 * \frac{nA}{\sqrt{Hz}} * (20+82)ohm" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nc2}^2&space;=&space;0.00102\frac{nV}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nc2}&space;=&space;0.00102\frac{nV}{\sqrt{Hz}}" title="\bar{V}_{nc2}^2 = 0.00102\frac{nV}{\sqrt{Hz}}" /></a>
+
+iii)
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nc3}^2&space;=&space;0.00002&space;*&space;\frac{nA}{\sqrt{Hz}}&space;*&space;20&space;ohm" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nc3}^2&space;=&space;0.00002&space;*&space;\frac{nA}{\sqrt{Hz}}&space;*&space;20&space;ohm" title="\small \bar{V}_{nc3}^2 = 0.00002 * \frac{nA}{\sqrt{Hz}} * 20 ohm" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nc2}^2&space;=&space;0.0004\frac{nV}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nc3}&space;=&space;0.0004\frac{nV}{\sqrt{Hz}}" title="\bar{V}_{nc2}^2 = 0.0004\frac{nV}{\sqrt{Hz}}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Total&space;Noise&space;=&space;\bar{V}_{nc}&space;=&space;\sqrt{\bar{V}_{nc1}^{2}&space;&plus;&space;\bar{V}_{nc2}^{2}&space;}&space;&plus;&space;\bar{V}_{nc3}&space;=&space;\bar{V}_{nc}&space;=&space;0.0025&space;\frac{nV}{HZ}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Total&space;Noise&space;=&space;\bar{V}_{nc}&space;=&space;\sqrt{\bar{V}_{nc1}^{2}&space;&plus;&space;\bar{V}_{nc2}^{2}&space;}&space;&plus;&space;\bar{V}_{nc3}&space;=&space;\bar{V}_{nc}&space;=&space;0.0025&space;\frac{nV}{HZ}" title="Total Noise =  \sqrt{\bar{V}_{nc1}^{2} + \bar{V}_{nc2}^{2} } + \bar{V}_{nc3} = \bar{V}_{nc} = 0.0025 \frac{nV}{HZ}" /></a>
+
+#### Voltage Noise
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=e_{ni}&space;=&space;20&space;\frac{nV}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e_{ni}&space;=&space;20&space;\frac{nV}{\sqrt{Hz}}" title="e_{ni} = 20 \frac{nV}{\sqrt{Hz}}" /></a>
+
+#### Total Noise for a Bandwidth of 30KHz
+ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{n}&space;=&space;\sqrt{(\bar{V}_{nr}^{2}&space;&plus;&space;\bar{V}_{nc}^{2}&space;&plus;&space;\bar{V}_{nv}^{2})&space;*&space;B.W.&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{n}&space;=&space;\sqrt{(\bar{V}_{nr}^{2}&space;&plus;&space;\bar{V}_{nc}^{2}&space;&plus;&space;\bar{V}_{nv}^{2})&space;*&space;B.W.&space;}" title="\bar{V}_{n} = \sqrt{(\bar{V}_{nr}^{2} + \bar{V}_{nc}^{2} + \bar{V}_{nv}^{2}) * B.W. }" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{n}&space;=&space;\sqrt{(3.1^{2}&space;&plus;&space;0.0025^{2}&space;&plus;&space;20^{2})&space;*&space;30KHz&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{n}&space;=&space;\sqrt{(3.1^{2}&space;&plus;&space;0.0025^{2}&space;&plus;&space;20^{2})&space;*&space;30KHz&space;}" title="\bar{V}_{n} = \sqrt{(3.1^{2} + 0.0025^{2} + 20^{2}) * 30KHz }" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{n}&space;=&space;3.5uV" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{n}&space;=&space;3.5uV" title="\bar{V}_{n} = 3.5uV" /></a>
+
+
+ ### 2.3 Selecting Gain and Offset Resistor
 
 - Calculate the require Gain (ΔVout/ΔVin)
 
@@ -43,8 +114,9 @@ Figure 3 below shows the three wire RTD configuration can be used to cancel lead
 	
 - Choose standard resistors to assure that the actual gain is equal to or less than the calculated gain. From INA826 data sheet we get the gain equation as:
 	
-G =  1+$\frac{49.4K }{RG}$
-RG = $\frac{G-1 }{49.4K}$ = 75Ω (standard value)
+<a href="https://www.codecogs.com/eqnedit.php?latex=G&space;=&space;1&plus;\frac{49.4K&space;}{RG}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?G&space;=&space;1&plus;\frac{49.4K&space;}{RG}" title="G = 1+\frac{49.4K }{RG}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=RG&space;=&space;\frac{G-1&space;}{49.4K}&space;=75ohm&space;(standard&space;value)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?RG&space;=&space;\frac{G-1&space;}{49.4K}&space;=75ohm&space;(standard&space;value)" title="RG = \frac{G-1 }{49.4K} =75ohm (standard   value)" /></a>
 	
 - Calculate a value of R3 based on the minimum output voltage and the gain
 R3 = 82Ω (standard value)
