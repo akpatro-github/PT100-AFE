@@ -16,9 +16,9 @@ The Design requirements are as follows:
 
 Figure 2 and Figure 3 show the schematic of the RTD amplifier for minimum and maximum output conditions. Note that this circuit was designed for a -40℃ to 151℃ RTD temperature range. At -40℃ the RTD resistance is 84.27Ω and the voltage across it is 8.427mV (VRTD = (100μA)(84.27Ω), see Figure 2). Notice that R3 develops a voltage drop that opposes the RTD drop. The drop across R3 is used to shift amplifiers input differential voltage to a minimum level. The output is the differential input multiplied by the gain (Vout = 659.67 x 227μV = 0.1497V). At 151℃ the RTD resistance is 157.69Ω and the voltage across it is 15.769mV (VRTD = (100μA)(157.69Ω)). This produces a differential input of 7.569mV and an output voltage of 4.9930V (Vout = 659.67 x 7.569mV = 4.9930V, see Figure 3).
 
-![@-40 C Figure](PT100-AFE/Block%20Diagram/-40C.png)
+![@-40 C Figure](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/-40C.png)
 
-![@151 C Figure](PT100-AFE/Block%20Diagram/151C.png)
+![@151 C Figure](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/151C.png)
 
 ### 2.1. **Lead Resistance cancelation (3 wire RTD)**
 	
