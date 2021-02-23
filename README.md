@@ -1,7 +1,11 @@
 # PT100-AFE
 Analog Front-End for the PT100 temperature sensor inside the HIMA temperature chamber.
 
+![Block_diagram](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/Temp_sensor_block%20_dia.png)
+
 # PT-100 Temperature vs. Resistance Data
+
+[Click Here](https://github.com/akpatro-github/PT100-AFE/blob/main/pt100-datasheet.csv) to get the PT-100 Temperature vs. Resistance Data.
 
 # Analog Front-End (AFE) Architecture
 
@@ -35,8 +39,6 @@ Figure 3 below shows the three wire RTD configuration can be used to cancel lead
 
 - Calculate the require Gain (ΔVout/ΔVin)
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;G=\frac{(Voutmax - Voutmin)}{(RRTDmax-RRTDmin).Iref}" title="Gain" />
-
 G = \frac{(Voutmax - Voutmin)}{(RRTDmax-RRTDmin).Iref} = \frac{(4.993-0.15)}{(157.69-84.27).100u} = 659.63
 	
 - Choose standard resistors to assure that the actual gain is equal to or less than the calculated gain. From INA826 data sheet we get the gain equation as:
@@ -48,7 +50,7 @@ RG = $\frac{G-1 }{49.4K}$ = 75Ω (standard value)
 R3 = 82Ω (standard value)
 	
 ## 3. PCB Design
-###3.1. PCB Layout
+### 3.1. PCB Layout
 
 ![PCB Top ](https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Top.png)
 
