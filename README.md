@@ -18,7 +18,10 @@ Figure 1 and Figure 2 show the schematic of the RTD amplifier for minimum and ma
 
 ![@-40 C Figure](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/-40C.png)
 
+Fig 1:RTD Amplifier wit minimum output condition
 ![@151 C Figure](https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/151C.png)
+
+Fig 2:RTD Amplifier wit maximum output condition
 
 ### 2.1. **Lead Resistance cancelation (3 wire RTD)**
 	
