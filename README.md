@@ -148,12 +148,12 @@ Cf = 0.22uF
 
 |<img title="PCB Top" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Top.png">|
 |:--:|
-|*Figure 4: PCB Top*|
+|*Figure 4: PCB Top - Red*|
 
 
 |<img title="PCB Bottom" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Bottom.png">|
 |:--:|
-|*Figure 5: PCB Bottom*|
+|*Figure 5: PCB Bottom - Blue*|
 
 ### 3.2. Component Selection
 
