@@ -24,11 +24,11 @@ Figure 2 and Figure 3 show the schematic of the RTD amplifier for minimum and ma
 
 |<img title="@-40C" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/-40C.png">|
 |:--:|
-|*Fig 2:RTD Amplifier wit minimum output condition*|
+|*Fig 2:RTD Amplifier with minimum output condition*|
 
 |<img title="@151C" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/151C.png">|
 |:--:|
-|*Fig 3:RTD Amplifier wit maximum output condition*|
+|*Fig 3:RTD Amplifier with maximum output condition*|
 
 
 
