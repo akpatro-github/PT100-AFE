@@ -7,7 +7,7 @@ Analog Front-End for the PT100 temperature sensor inside the HIMA temperature ch
 
 # PT-100 Temperature vs. Resistance Data
 
-[Click Here](https://github.com/akpatro-github/PT100-AFE/blob/main/pt100-datasheet.csv) to get the PT-100 Temperature vs. Resistance Data.
+[Click Here](https://github.com/akpatro-github/PT100-AFE/blob/main/Python/pt100-datasheet.csv) to get the PT-100 Temperature vs. Resistance Data.
 
 # Analog Front-End (AFE) Architecture
 
@@ -118,7 +118,7 @@ iii)
 
  ### 2.3 Selecting Gain and Offset Resistor
 
-- Calculate the require Gain (ΔVout/ΔVin)
+- Calculate the required Gain (ΔVout/ΔVin)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=G&space;=&space;\frac{(Voutmax&space;-&space;Voutmin)}{(Rmax-Rmin).Iref}&space;=&space;\frac{(4.993-0.15)}{(157.69-84.27).100u}&space;=&space;659.63" target="_blank"><img src="https://latex.codecogs.com/gif.latex?G&space;=&space;\frac{(Voutmax&space;-&space;Voutmin)}{(Rmax-Rmin).Iref}&space;=&space;\frac{(4.993-0.15)}{(157.69-84.27).100u}&space;=&space;659.63" title="G = \frac{(Voutmax - Voutmin)}{(Rmax-Rmin).Iref} = \frac{(4.993-0.15)}{(157.69-84.27).100u} = 659.63" /></a>
 	
@@ -161,3 +161,44 @@ Cf = 0.22uF
 
 
 # Analog Discovery 2
+## Specification
+- 14 Bit ADC
+- Voltage Range: -25V to 25V
+
+## Operation
+### Calculating Bit of operation we need 
+- Required voltage range: 0-5V
+- So, we need to use 11 Bit ADC (Voltage Range: 0-6.25V)
+
+### LSB Calculation
+- Temperature Range: -40℃ to 151℃
+- No of Samples 192, we have taken 256(2^8) no. of samples
+- So we can represent 1℃ using 8bit
+- *For 11 Bit of operation LSB = 0.125℃*
+
+## Analysis using Python
+### Resistance Vs Temperature Plot
+
+|<img title="Resistance Vs Temperature" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Python/Res_vs_Temp.png">|
+|:--:|
+|*Fig 6:Resistance Vs Temperature*|
+
+### AFE o/p Voltage Vs Temperature Plot
+
+|<img title="AFE o/p Voltage Vs Temperature Plot" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Python/AFE_vs_Temp.png">|
+|:--:|
+|*Fig 7:AFE o/p Voltage Vs Temperature*|
+
+### Code Vs Temperature Plot
+
+|<img title="Code Vs Temperature Plot" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Python/Code_vs_Temp.png">|
+|:--:|
+|*Fig 8:Code Vs Temperature*|
+
+### Error Vs Temperature Plot
+
+|<img title="Error Vs Temperature Plot" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Python/Error_vs_Temp.png">|
+|:--:|
+|*Fig 9:Error Vs Temperature*|
+
+[Click Here](https://github.com/akpatro-github/PT100-AFE/blob/main/Python/pt100.py) to get the python code.
