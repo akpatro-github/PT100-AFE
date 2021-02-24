@@ -1,0 +1,16 @@
+Sl No,"	Part","	Description","	Manufacturer","	Manufacturing P/N","	Quantity"
+"1	",0.1uF,"	CAP CER 0.1UF 25V X7R 0402","	KEMET	","C0402C104K3RAC7411	",2
+"2	",0.22uF,"	0.22µF ±10% 25V Ceramic Capacitor X5R 0402 (1005 Metric)	",Yageo,"	CC0402KRX5R8BB224","	1"
+"3	",10uF,"	CAP TANT 10UF 10% 25V 2917	",KEMET,"	T491D106K025AT	",2
+"4	",0 ohm,"	RES SMD 0 OHM JUMPER 1/16W 0402","	Vishay Dale","	CRCW04020000Z0ED	",2
+"5	",82 ohm,"	RES 82 OHM 0.1% 1/10W 0402	"," Panasonic Electronic Components	"," ERA-2VEB82R0X	",1
+"6	",75 ohm,"	RES 82 OHM 0.1% 1/10W 0402","	Panasonic Electronic Components","	ERA-2VEB82R0X	",2
+"7	",6.98Mohm,"	RES 6.98M OHM 1% 1/10W 0402	",KOA Speer Electronics Inc.,"	RK73H1ERTTP6984F	",2
+"8	",INA826AIDR,"	Instrumentation Amplifier 1 Circuit Rail-to-Rail 8-SOIC	","Texas Instruments	","INA826AIDR	",1
+"9	",REF200AU/2K5,"	IC CURR SOURCE/SINK MIRROR 8SOIC ","	Texas Instruments	","REF200AU/2K5	",1
+10,"	Screw Terminal","	""Fixed Terminal Blocks Terminal block - screw type  5.00 - horizontal 3 poles CUI Blue slotted screw  PCB mount""	CUI Devices	TB002-500-03BE	",1,,
+11,"	Micro USB","	""MICRO USB TYPE B RIGHT ANGLE"" "," 	Adam Tech	","MCR-B-S-RA-TSMT-CS1-WP-T/R	",1
+12,"	2x5 Pin Shrouded Header","	""Simple shrouded 10-pin connector. Good for preventing cable connection mishaps. Use for programming data power or any other kind of connection. 2x5 pins on 0.1 inch  centers""","	Sparkfun","	https://www.sparkfun.com/products/8506	",1
+13,"	SMA edge","	""RP-SMA Connector Jack Male Pin 50Ohm Board Edge End Launch Solder""	",Würth Elektronik,"	6.30122E+13	",1
+14,"	RF Shield"," RF Shield Cover 0.750"" (19.05mm) X 1.125"" (28.58mm) Non-Vented	","Orbel Corporation	","G-0750TB1125-0250XC	",1
+15,"	Diode","	DIODE GEN PURP 50V 150MA SOD323	",Vishay General Semiconductor - Diodes Division,"	1N4151WS-E3-08	",1
