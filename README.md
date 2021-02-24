@@ -131,8 +131,17 @@ iii)
 - Calculate a value of R3 based on the minimum output voltage and the gain
 R3 = 82Ω (standard value)
 
-### 2.4 Output Filter
-- Gain = 
+### 2.4 External Low Pass Filter
+- Given that when G = 1000, BandWidth = 6KHz (From Data sheet of INA826)
+- In this operation G = 659.67, So B.W. = 9.1KHz
+- calculating the value of Rf and Cf
+ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=f_{c}=\frac{1}{2\cdot&space;\prod&space;\cdot&space;R_{f}\cdot&space;C_{f}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{c}=\frac{1}{2\cdot&space;\prod&space;\cdot&space;R_{f}\cdot&space;C_{f}}" title="f_{c}=\frac{1}{2\cdot \prod \cdot R_{f}\cdot C_{f}}" /></a>
+
+From this equation
+Rf = 75Ω &
+Cf = 0.22uF
+
 
 ## 3. PCB Design
 ### 3.1. PCB Layout
@@ -145,6 +154,10 @@ R3 = 82Ω (standard value)
 |<img title="PCB Bottom" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Bottom.png">|
 |:--:|
 |*Figure 5: PCB Bottom*|
+
+### 3.2. Component Selection
+
+[Click Here](https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/bill%20of%20components.docx) to get the bill of components.
 
 
 # Analog Discovery 2
