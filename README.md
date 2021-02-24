@@ -20,7 +20,7 @@ The Design requirements are as follows:
 
 ## 2. Theory of operation
 
-Figure 2 and Figure 3 show the schematic of the RTD amplifier for minimum and maximum output conditions. Note that this circuit was designed for a -40℃ to 151℃ RTD temperature range. At -40℃ the RTD resistance is 84.27Ω and the voltage across it is 8.427mV (VRTD = (100μA)(84.27Ω), see Figure 2). Notice that Rtrim develops a voltage drop that opposes the RTD drop. The drop across Rtrim is used to shift amplifiers input differential voltage to a minimum level. The output is the differential input multiplied by the gain (Vout = 659.67 x 227μV = 0.1497V). At 151℃ the RTD resistance is 157.69Ω and the voltage across it is 15.769mV (VRTD = (100μA)(157.69Ω)). This produces a differential input of 7.569mV and an output voltage of 4.9930V (Vout = 659.67 x 7.569mV = 4.9930V, see Figure 2).
+Figure 2 and Figure 3 show the schematic of the RTD amplifier for minimum and maximum output conditions. Note that this circuit was designed for a -40℃ to 151℃ RTD temperature range. At -40℃ the RTD resistance is 84.27Ω and the voltage across it is 8.427mV (VRTD = (100μA)(84.27Ω), see Figure 2). Notice that Rtrim develops a voltage drop that opposes the RTD drop. The drop across Rtrim is used to shift amplifiers input differential voltage to a minimum level. The output is the differential input multiplied by the gain (Vout = 659.67 x 227μV = 0.1497V). At 151℃ the RTD resistance is 157.69Ω and the voltage across it is 15.769mV (VRTD = (100μA)(157.69Ω)). This produces a differential input of 7.569mV and an output voltage of 4.9930V (Vout = 659.67 x 7.569mV = 4.9930V, see Figure 3).
 
 |<img title="@-40C" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/-40C.png">|
 |:--:|
@@ -46,7 +46,7 @@ Figure 3 below shows the three wire RTD configuration can be used to cancel lead
 ### 2.2 Noise Calculation
 #### Resistror Noise
 For Analysis purpose, Rwire = 20Ω,
-		     Temperature = 25C(318k), 
+		     Temperature = 45℃(318k), 
 		     B.W. = 30KHz
 
 Thermal noise of resistor = <a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_n_r^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;R" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_n_r^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;R" title="\bar{V}_n_r^2 = 4 * K * T * R" /></a>
