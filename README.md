@@ -146,20 +146,26 @@ Cf = 0.22uF
 ## 3. PCB Design
 This PCB layout was designed in using [Autodesk Eagle](https://www.autodesk.in/products/eagle/overview). For the components we have used [SparkFun Eagle Libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries). The footprints of the ICs(INA 826, Ref200) can be downloaded from the [Ultra Librarian](https://www.ultralibrarian.com/).
 
+### 3.1. Electrical Schematic
+
+|<img title="PCB Bottom" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/elect_sch.png">|
+|:--:|
+|*Figure 4:Electrical Schematic *|
+
 ### 3.1. PCB Layout
 
 |<img title="PCB Top" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Top.png">|
 |:--:|
-|*Figure 4: PCB Top - Red*|
+|*Figure 5: PCB Top - Red*|
 
 
 |<img title="PCB Bottom" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Bottom.png">|
 |:--:|
-|*Figure 5: PCB Bottom - Blue*|
+|*Figure 6: PCB Bottom - Blue*|
 
 ### 3.2. Component Selection
 
-[Click Here](https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/bill%20of%20components.docx) to get the bill of components.
+[Click Here](https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/bill_of_comp.csv) to get the bill of components.
 
 
 # Analog Discovery 2
@@ -183,24 +189,24 @@ This PCB layout was designed in using [Autodesk Eagle](https://www.autodesk.in/p
 
 |<img title="Resistance Vs Temperature" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Python/Res_vs_Temp.png">|
 |:--:|
-|*Fig 6:Resistance Vs Temperature*|
+|*Fig 7:Resistance Vs Temperature*|
 
 ### AFE o/p Voltage Vs Temperature Plot
 
 |<img title="AFE o/p Voltage Vs Temperature Plot" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Python/AFE_vs_Temp.png">|
 |:--:|
-|*Fig 7:AFE o/p Voltage Vs Temperature*|
+|*Fig 8:AFE o/p Voltage Vs Temperature*|
 
 ### Code Vs Temperature Plot
 
 |<img title="Code Vs Temperature Plot" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Python/Code_vs_Temp.png">|
 |:--:|
-|*Fig 8:Code Vs Temperature*|
+|*Fig 9:Code Vs Temperature*|
 
 ### Error Vs Temperature Plot
 
 |<img title="Error Vs Temperature Plot" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Python/Error_vs_Temp.png">|
 |:--:|
-|*Fig 9:Error Vs Temperature*|
+|*Fig 10:Error Vs Temperature*|
 
 [Click Here](https://github.com/akpatro-github/PT100-AFE/blob/main/Python/pt100.py) to get the python code.
