@@ -144,7 +144,7 @@ Cf = 0.22uF
 
 
 ## 3. PCB Design
-This PCB layout was designed in using [Autodesk Eagle](https://www.autodesk.in/products/eagle/overview). For the components we have used [SparkFun Eagle Libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries). The footprints of the ICs(INA 826, Ref200) can be downloaded from the [Ultra Librarian](https://www.ultralibrarian.com/).
+This PCB layout was designed using [Autodesk Eagle](https://www.autodesk.in/products/eagle/overview). For the components we have used [SparkFun Eagle Libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries). The footprints of the ICs(INA 826, Ref200) can be downloaded from the [Ultra Librarian](https://www.ultralibrarian.com/).
 
 ### 3.1. Electrical Schematic
 
