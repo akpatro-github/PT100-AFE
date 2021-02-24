@@ -40,7 +40,7 @@ Figure 3 below shows the three wire RTD configuration can be used to cancel lead
 
 |<img title="Schematic" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/schematic.png">|
 |:--:|
-|*Figure 1: Schematic of AFE*|
+|*Figure 4: Schematic of AFE*|
 
 
 ### 2.2 Noise Calculation
@@ -139,12 +139,12 @@ R3 = 82Ω (standard value)
 
 |<img title="PCB Top" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Top.png">|
 |:--:|
-|*Figure 1: PCB Top*|
+|*Figure 4: PCB Top*|
 
 
 |<img title="PCB Bottom" src="https://github.com/akpatro-github/PT100-AFE/blob/main/PCB/PCB_Bottom.png">|
 |:--:|
-|*Figure 1: PCB Bottom*|
+|*Figure 5: PCB Bottom*|
 
 
 # Analog Discovery 2
