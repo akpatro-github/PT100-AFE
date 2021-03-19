@@ -1,7 +1,7 @@
 # PT100-AFE
 Analog Front-End for the PT100 temperature sensor inside the HIMA temperature chamber.
 
-|<img title="Block Diagram" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/Temp_sensor_block%20_dia.png">|
+|<img title="Block Diagram" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/Temp_sensor_block.png">|
 |:--:|
 |*Figure 1: Block Diagram of PT-100*|
 
