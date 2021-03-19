@@ -52,19 +52,11 @@ For Analysis purpose, Rwire = 20Ω,
 
 
 
- - <a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nr1}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{wire}&space;&plus;&space;R_{trim})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nr1}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{wire}&space;&plus;&space;R_{trim})" title="\small \bar{V}_{nr1}^2 = 4.K.T.(R_{wire} + R_{trim})" /></a>
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nr1}^2&space;=&space;1.79&space;*&space;10^{-18}&space;\frac{V^{2}}{HZ}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nr1}^2&space;=&space;1.79&space;*&space;10^{-18}&space;\frac{V^{2}}{HZ}" title="\bar{V}_{nr1}^2 = 1.79 * 10^{-18} \frac{V^{2}}{HZ}" /></a>
+- <a href="https://www.codecogs.com/eqnedit.php?latex=\overline{Vnr_{1}^{2}}&space;=&space;4.K.T.(R_{wire}&plus;R_{trim})&space;=&space;1.78&space;\times&space;10^{-18}&space;\frac{V^{2}}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\overline{Vnr_{1}^{2}}&space;=&space;4.K.T.(R_{wire}&plus;R_{trim})&space;=&space;1.78&space;\times&space;10^{-18}&space;\frac{V^{2}}{\sqrt{Hz}}" title="\overline{Vnr_{1}^{2}} = 4.K.T.(R_{wire}+R_{trim}) = 1.78 \times 10^{-18} \frac{V^{2}}{\sqrt{Hz}}" /></a>
 
 
-- <a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nr2}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{PT100}&space;&plus;&space;R_{wire})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nr2}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{PT100}&space;&plus;&space;R_{wire})" title="\small \bar{V}_{nr2}^2 = 4.K.T.(R_{PT100} + R_{wire})" /></a>
-
- <a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nr2}^2&space;=&space;4.33&space;*&space;10^{-18}\frac{V^{2}}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nr2}^2&space;=&space;4.33&space;*&space;10^{-18}\frac{V^{2}}{{Hz}}" title="\bar{V}_{nr2}^2 = 4.33 * 10^{-18}\frac{V^{2}}{{Hz}}" /></a>
-
-
- - <a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nr3}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{wire})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nr3}^2&space;=&space;4&space;*&space;K&space;*&space;T&space;*&space;(R_{wire})" title="\small \bar{V}_{nr3}^2 = 4.K.T.(R_{wire})" /></a>
-
- <a href="https://www.codecogs.com/eqnedit.php?latex=\bar{V}_{nr2}^2&space;=&space;3.51&space;*&space;10^{-19}\frac{V^{2}}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{V}_{nr3}^2&space;=&space;3.51&space;*&space;10^{-19}\frac{V^{2}}{{Hz}}" title="\bar{V}_{nr3}^2 = 3.51 * 10^{-19}\frac{V^{2}}{{Hz}}" /></a>
+- <a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nr2}^2&space;=&space;4.K.T.(R_{PT100}&space;&plus;&space;R_{wire})&space;=&space;4.33&space;*&space;10^{-18}\frac{V^{2}}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nr2}^2&space;=&space;4.K.T.(R_{PT100}&space;&plus;&space;R_{wire})&space;=&space;4.33&space;*&space;10^{-18}\frac{V^{2}}{\sqrt{Hz}}" title="\small \bar{V}_{nr2}^2 = 4.K.T.(R_{PT100} + R_{wire}) = 4.33 * 10^{-18}\frac{V^{2}}{\sqrt{Hz}}" /></a>
+- <a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\bar{V}_{nr2}^2&space;=&space;4.K.T.R_{wire}&space;=&space;3.51&space;*&space;10^{-19}\frac{V^{2}}{\sqrt{Hz}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\bar{V}_{nr2}^2&space;=&space;4.K.T.R_{wire}&space;=&space;3.51&space;*&space;10^{-19}\frac{V^{2}}{\sqrt{Hz}}" title="\small \bar{V}_{nr2}^2 = 4.K.T.R_{wire} = 3.51 * 10^{-19}\frac{V^{2}}{\sqrt{Hz}}" /></a>
 
 |<img title="R_noise" src="https://github.com/akpatro-github/PT100-AFE/blob/main/Block%20Diagram/r_noise.png">|
 |:--:|
